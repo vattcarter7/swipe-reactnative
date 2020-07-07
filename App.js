@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { Card, Button } from 'react-native-elements';
+import { StyleSheet, View, Text, Button } from 'react-native';
+import { Card } from 'react-native-elements';
 import Deck from './src/Deck';
 
 const DATA = [
@@ -53,11 +53,12 @@ class App extends Component {
         <Text style={{ marginBottom: 10 }}>
           I can customize the card further
         </Text>
-        <Button
+        <Button title='View' />
+        {/* <Button
           icon={{ name: 'code' }}
           backgroundColor='#03a9f4'
-          title='View Now!'
-        />
+          title='View'
+       /> */}
       </Card>
     );
   }
